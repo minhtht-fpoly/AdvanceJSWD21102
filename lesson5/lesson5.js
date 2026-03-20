@@ -151,6 +151,7 @@ const productInfo = [
     stock: 27,
   },
 ];
+let id;
 //In ra màn hình thông tin của những sản phẩm này
 function renderProduct() {
   let renderString = "";
@@ -170,7 +171,7 @@ function renderProduct() {
               : `<td style="background-color: red;">${product.stock}</td>`
         }
         <td>
-          <button class="btn btn-sm btn-primary me-2">Sửa</button>
+          <button class="btn btn-sm btn-primary me-2"onclick="fillEditInfo(${i})">Sửa</button>
           <button class="btn btn-sm btn-danger" onclick="xoa(${i})">Xóa</button>
         </td>
       </tr>`;
@@ -184,4 +185,40 @@ function xoa(id) {
   }
   renderProduct();
 }
+function addProduct(event) {
+  event.preventDefault();
+
+  let pName = document.getElementById("name").value;
+  let pPrice = document.getElementById("price").value;
+  let pCategory = document.getElementById("category").value;
+  let pStock = document.getElementById("stock").value;
+  productInfo.push({
+    name: pName,
+    price: pPrice,
+    category: pCategory,
+    stock: pStock,
+  });
+  renderProduct();
+}
 renderProduct();
+function fillEditInfo(i) {
+  id = i;
+  document.getElementById("eName").value = productInfo[i].name;
+  document.getElementById("ePrice").value = productInfo[i].price;
+  document.getElementById("eCategory").value = productInfo[i].category;
+  document.getElementById("eStock").value = productInfo[i].stock;
+}
+function editProduct(event) {
+  event.preventDefault();
+  let pName = document.getElementById("eName").value;
+  let pPrice = document.getElementById("ePrice").value;
+  let pCategory = document.getElementById("eCategory").value;
+  let pStock = document.getElementById("eStock").value;
+  productInfo[id] = {
+    name: pName,
+    price: pPrice,
+    category: pCategory,
+    stock: pStock,
+  };
+  renderProduct();
+}
