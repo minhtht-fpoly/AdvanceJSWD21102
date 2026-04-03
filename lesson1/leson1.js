@@ -39,9 +39,9 @@ console.log(arr.length);
 // arr.splice(arr.length, 0, 999);
 arr.splice(-2, 1);
 
-console.log(arr);
-(function add() {
-  var a = 9;
-  var b = 10;
-  alert(a + b);
-})();
+// console.log(arr);
+// (function add() {
+//   var a = 9;
+//   var b = 10;
+//   alert(a + b);
+// })();
