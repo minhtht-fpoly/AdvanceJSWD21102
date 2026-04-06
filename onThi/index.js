@@ -14,8 +14,10 @@ async function renderProducts() {
             <td>${book.category}</td>
             <td>${book.author}</td>
             <td>
-              <button class="btn btn-sm btn-primary me-2">Sửa</button>
-              <button class="btn btn-sm btn-danger" onclick = "xoa(${book.id})">Xóa</button>
+              <button class="btn btn-sm btn-primary me-2">
+              <a href="edit.html?id=${book.id}">Sửa</a>
+              </button>
+              <button class="btn btn-sm btn-danger" onclick = "xoa('${book.id}')">Xóa</button>
             </td>`;
     });
     document.getElementById("renderBody").innerHTML = renderString;

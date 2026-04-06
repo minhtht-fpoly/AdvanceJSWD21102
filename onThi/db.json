@@ -1,39 +1,32 @@
 {
   "books": [
     {
-      "id": "3",
-      "title": "Atomic Habits",
+      "title": "5467890-=098765",
+      "price": "1898745879008045",
       "author": "James Clear",
-      "price": 18,
       "category": "Self-help",
-      "inStock": false,
-      "publishedYear": 2018
+      "id": "3"
     },
     {
-      "id": "4",
-      "title": "Harry Potter and the Sorcerer's Stone",
+      "title": "Harry Potter and the Sorcerer's Stone abcflkjhgfdhjkj",
+      "price": "165678907687899087656768798",
       "author": "J.K. Rowling",
-      "price": 15.75,
-      "category": "Fantasy",
-      "inStock": true,
-      "publishedYear": 1997
-    },
-    {
-      "id": "5",
-      "title": "Deep Work",
-      "author": "Cal Newport",
-      "price": 22,
-      "category": "Productivity",
-      "inStock": true,
-      "publishedYear": 2016
-    },
-    {
-      "title": "Trần Hữu Tiến Minh",
-      "price": "123",
-      "author": "Minh",
       "category": "18+",
-      "id": "ta3GF178SKE"
+      "id": "4"
+    },
+    {
+      "title": "Deep Wor đã sửa",
+      "price": "22",
+      "author": "Cal Newport",
+      "category": "18+",
+      "id": "5"
     }
   ],
-  "$schema": "./node_modules/json-server/schema.json"
+  "users": [
+    {
+      "email": "admin@gmail.com",
+      "password": "$2a$10$l91ggaLSpdDyGp2J9uz.mOz0jmBuHaQYZGKxQ12fBXz4r.IgavBwu",
+      "id": 1
+    }
+  ]
 }
