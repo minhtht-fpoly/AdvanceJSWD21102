@@ -16,7 +16,7 @@
           <h4 class="mb-0">Nhập thông tin đăng nhập</h4>
         </div>
         <div class="card-body">
-          <form onsubmit="loginAccount()">
+          <form onsubmit="loginAccount(event)">
             <div class="mb-3">
               <label for="email" class="form-label">Email</label>
               <input type="email" class="form-control" id="email" required />
@@ -38,6 +38,7 @@
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.8/dist/axios.min.js"></script>
     <script src="./login.js"></script>
   </body>
 </html>

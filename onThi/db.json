@@ -27,6 +27,11 @@
       "email": "admin@gmail.com",
       "password": "$2a$10$l91ggaLSpdDyGp2J9uz.mOz0jmBuHaQYZGKxQ12fBXz4r.IgavBwu",
       "id": 1
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "$2a$10$nY3OF8HRqqG4qg4lC3XQwO1GnduKa5Y3Ni75dQFYjLHDC.qIOQC2u",
+      "id": 2
     }
   ]
 }
